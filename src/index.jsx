@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom' // eslint-disable-line import/no-extraneous-dep
 import Convertor from './Convertor'
 
 ReactDOM.render(
-    <Convertor>
+    <Convertor mode="display">
         <p>2</p>
         <input />
     </Convertor>,

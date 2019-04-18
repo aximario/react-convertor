@@ -17,6 +17,11 @@ export default function Convertor({ convert, mode, children }) {
     return convert ? children[1] : children[0]
 }
 
+Convertor.defaultProps = {
+    convert: false,
+    mode: 'exist',
+}
+
 Convertor.propTypes = {
     convert: PropTypes.bool,
     mode: PropTypes.oneOf(['display', 'exist']),

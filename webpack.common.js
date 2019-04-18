@@ -5,15 +5,6 @@ module.exports = {
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
     },
-    module: {
-        rules: [
-            {
-                test: /\.jsx$/,
-                exclude: /node_modules/,
-                use: 'babel-loader',
-            },
-        ],
-    },
     resolve: {
         extensions: ['.jsx', '.js', '.json'],
     },
