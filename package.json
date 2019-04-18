@@ -1,8 +1,8 @@
 {
-  "name": "react-convertor",
+  "name": "@aximario/react-convertor",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "react component convertor",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
     "compile": "rm -r ./dist && babel src/Convertor -d dist --copy-files --presets=@babel/preset-env,@babel/react",
@@ -12,9 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/aximario/react-convertor.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["react", "component", "convertor"],
+  "author": "aximario<aximario@qq.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/aximario/react-convertor/issues"
   },
