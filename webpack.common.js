@@ -1,11 +1,11 @@
 const path = require('path')
 
 module.exports = {
-    output: {
-        filename: 'index.js',
-        path: path.resolve(__dirname, 'dist'),
-    },
-    resolve: {
-        extensions: ['.jsx', '.js', '.json'],
-    },
+  output: {
+    filename: 'index.js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  resolve: {
+    extensions: ['.jsx', '.js', '.json']
+  }
 }

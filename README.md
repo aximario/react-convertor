@@ -1,5 +1,7 @@
 # react-convertor
 
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+
 Convertor 组件只接受两个 child，根据配置展示其中的一个
 
 ## 使用

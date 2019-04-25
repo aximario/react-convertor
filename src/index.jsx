@@ -1,11 +1,11 @@
-import React from 'react' // eslint-disable-line import/no-extraneous-dependencies
-import ReactDOM from 'react-dom' // eslint-disable-line import/no-extraneous-dependencies
+import React from 'react'
+import ReactDOM from 'react-dom'
 import Convertor from './Convertor'
 
 ReactDOM.render(
-    <Convertor mode="display">
-        <p>2</p>
-        <input />
-    </Convertor>,
-    document.getElementById('root'),
+  <Convertor mode='display'>
+    <p>2</p>
+    <input />
+  </Convertor>,
+  document.getElementById('root')
 )

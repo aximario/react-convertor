@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/aximario/react-convertor.git"
   },
-  "keywords": ["react", "component", "convertor"],
+  "keywords": [
+    "react",
+    "component",
+    "convertor"
+  ],
   "author": "aximario<aximario@qq.com>",
   "license": "MIT",
   "bugs": {
@@ -20,7 +24,6 @@
   },
   "homepage": "https://github.com/aximario/react-convertor#readme",
   "devDependencies": {
-    "@aximario/eslint-config-aximario": "^1.0.2",
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
@@ -43,5 +46,9 @@
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": ["dist/"]
   }
 }
