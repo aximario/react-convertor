@@ -1,10 +1,13 @@
-const merge = require('webpack-merge') // eslint-disable-line import/no-extraneous-dependencies
-const HtmlWebpackPlugin = require('html-webpack-plugin') // eslint-disable-line import/no-extraneous-dependencies
-const common = require('./webpack.common')
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = merge(common, {
+module.exports = {
   mode: 'development',
-  entry: './src/index.jsx',
+  entry: './src/index.js',
+  output: {
+    filename: 'index.js',
+    path: path.resolve(__dirname, 'dist')
+  },
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist'
@@ -34,5 +37,8 @@ module.exports = merge(common, {
         ]
       }
     ]
+  },
+  resolve: {
+    extensions: ['.jsx', '.js', '.json']
   }
-})
+}
