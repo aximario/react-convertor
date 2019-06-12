@@ -8,7 +8,7 @@ export enum Mode {
 interface Props {
   convert: boolean
   mode: Mode
-  children: [React.ReactElement, React.ReactElement]
+  children: [React.ReactNode, React.ReactNode]
 }
 
 export default function Convertor (props: Props) {
@@ -32,5 +32,5 @@ export default function Convertor (props: Props) {
 
 Convertor.defaultProps = {
   convert: false,
-  mode: 'exist'
+  mode: Mode.exist
 }

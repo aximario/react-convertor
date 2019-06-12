@@ -4,8 +4,8 @@ import Convertor from './Convertor'
 import { Mode } from './Convertor'
 
 ReactDOM.render(
-  <Convertor mode={Mode.display}>
-    <p>2</p>
+  <Convertor convert mode={Mode.display}>
+    2
     <input />
   </Convertor>,
   document.getElementById('root')

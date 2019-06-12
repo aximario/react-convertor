@@ -1,6 +1,6 @@
 {
   "name": "@aximario/react-convertor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react component convertor",
   "main": "./dist/index.js",
   "scripts": {
