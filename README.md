@@ -15,7 +15,7 @@ npm i @aximario/react-convertor -S
 | 属性 | 描述 | 类型 | 默认值 |
 | ---- | ---- | ---- |------- |
 | convert | 是否展示第二个孩子 | boolean | false |
-| mode | 展示方式，`'exist' | 'display'` exist 通过切换dom控制，display 通过样式控制，使用 display 时会在传入的孩子外面包一层 div | string | exist |
+| mode | 展示方式，`'exist','display'` exist 通过切换dom控制，display 通过样式控制，使用 display 时会在传入的孩子外面包一层 div | string | exist |
 
 ## 使用
 
