@@ -5,8 +5,9 @@
   "main": "./dist/index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "compile": "rm -r ./dist && babel src/Convertor -d dist --copy-files --presets=@babel/preset-env,@babel/react",
-    "test": "standard"
+    "build": "tsc -p ./tsconfig.prod.json -d",
+    "lint": "standard *.ts",
+    "lint:fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -26,10 +27,13 @@
   "devDependencies": {
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
     "css-loader": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "standard": "^12.0.1",
     "style-loader": "^0.23.1",
     "ts-loader": "^6.0.2",
     "typescript": "^3.5.1",
@@ -41,5 +45,11 @@
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
+  },
+  "standard": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint/eslint-plugin"
+    ]
   }
 }
