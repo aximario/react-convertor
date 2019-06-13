@@ -1,19 +1,14 @@
 import * as React from 'react'
 
-export enum Mode {
-  display = 'display',
-  exist = 'exist'
-}
-
 interface Props {
   convert: boolean
-  mode: Mode
+  mode: 'exist' | 'display'
   children: [React.ReactNode, React.ReactNode]
 }
 
 export default function Convertor (props: Props) {
   const { convert, mode, children } = props
-  if (mode === Mode.display) {
+  if (mode === 'display') {
     return (
       <>
         <div style={{ display: convert ? 'none' : 'block' }}>
@@ -32,5 +27,5 @@ export default function Convertor (props: Props) {
 
 Convertor.defaultProps = {
   convert: false,
-  mode: Mode.exist
+  mode: 'exist'
 }
